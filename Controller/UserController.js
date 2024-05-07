@@ -26,7 +26,7 @@ const sendVerificationMail = (email, token, name, res) => {
     subject: "Reset Password",
     html: `Dear ${name},<br><br>
     You have requested to reset your password. Please use the following link to reset your password:
-    <a href="http://localhost:3000/reset_pass/?token=${token}">Reset Password</a>`,
+    <a href="https://mernback-85dt.onrender.com/api/users/reset_pass/?token=${token}">Reset Password</a>`,
   };
 
   transporter.sendMail(mailOptions, (err, info) => {
